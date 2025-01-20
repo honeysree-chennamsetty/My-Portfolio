@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Sree's Portfolio</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            align-items: center;
+            background: url('header-background.jpeg') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            text-align: left;
+            padding: 50px 20px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Overlay for readability */
+            z-index: 0; /* Put the overlay behind content */
+        }
+
+        header * {
+            position: relative;
+            z-index: 1; /* Ensure content is above overlay */
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular picture */
+            margin-right: 20px;
+            border: 5px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header div {
+            max-width: 600px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation buttons */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Section styling */
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+        }
+
+        /* Download CV button styling */
+        .download-cv {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-cv:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="sree.jpg" alt="Honey Sree's Picture">
+        <div>
+            <h1 id="name-animation">
+                <span>H</span><span>o</span><span>n</span><span>e</span><span>y</span> 
+                <span>S</span><span>r</span><span>e</span><span>e</span> 
+                <span>C</span><span>h</span><span>e</span><span>n</span><span>n</span><span>a</span><span>m</span><span>s</span><span>e</span><span>t</span><span>t</span><span>y</span>
+            </h1>
+            <p>Software Engineer | Embedded Systems Enthusiast</p>
+        </div>
+    </header>
+    
+    <style>
+        #name-animation span {
+            display: inline-block; /* To apply animation individually */
+            opacity: 0; /* Start invisible */
+            transform: translateY(20px); /* Start slightly below */
+            animation: fadeInUp 0.5s ease forwards;
+        }
+    
+        #name-animation span:nth-child(1) { animation-delay: 0.1s; }
+        #name-animation span:nth-child(2) { animation-delay: 0.2s; }
+        #name-animation span:nth-child(3) { animation-delay: 0.3s; }
+        #name-animation span:nth-child(4) { animation-delay: 0.4s; }
+        #name-animation span:nth-child(5) { animation-delay: 0.5s; }
+        #name-animation span:nth-child(6) { animation-delay: 0.6s; }
+        #name-animation span:nth-child(7) { animation-delay: 0.7s; }
+        #name-animation span:nth-child(8) { animation-delay: 0.8s; }
+        #name-animation span:nth-child(9) { animation-delay: 0.9s; }
+        #name-animation span:nth-child(10) { animation-delay: 1s; }
+        #name-animation span:nth-child(11) { animation-delay: 1.1s; }
+        #name-animation span:nth-child(12) { animation-delay: 1.2s; }
+        #name-animation span:nth-child(13) { animation-delay: 1.3s; }
+        #name-animation span:nth-child(14) { animation-delay: 1.4s; }
+        #name-animation span:nth-child(15) { animation-delay: 1.5s; }
+        #name-animation span:nth-child(16) { animation-delay: 1.6s; }
+        #name-animation span:nth-child(17) { animation-delay: 1.7s; }
+        #name-animation span:nth-child(18) { animation-delay: 1.8s; }
+        #name-animation span:nth-child(19) { animation-delay: 1.9s; }
+        #name-animation span:nth-child(20) { animation-delay: 2s; }
+        #name-animation span:nth-child(21) { animation-delay: 2.1s; }
+        #name-animation span:nth-child(22) { animation-delay: 2.2s; }
+    
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <button onclick="scrollToSection('about')">About Me</button>
+        <button onclick="scrollToSection('experience')">Experience</button>
+        <button onclick="scrollToSection('education')">Education</button>
+        <button onclick="scrollToSection('skills')">Skills</button>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="About Me">
+        <h2>About Me</h2>
+        <p>Dynamic and resourceful Software Engineer with a strong academic foundation and practical experience in software development, data analysis, and cloud technologies. Pursuing a Master’s degree in Software Engineering at Blekinge Institute of Technology, complemented by industry experience in automation, cost optimization, and dashboard development. Adept at solving complex problems, collaborating with diverse teams, and delivering efficient, scalable solutions. Passionate about leveraging innovative technologies to create impactful software systems and drive continuous improvement.</p>
+        <a href="Honey_sree_Resume.pdf" download class="download-cv">Download My CV</a>
+    </section>
+
+    <section id="Experience">
+        <h2>EXPERIENCE</h2>
+    
+        <div class="experience-item">
+            <div class="job-title">Summer Intern R & D</div>
+            <div class="company">Ericsson</div>
+            <div class="date-location">Jun 2024 – Oct 2024 | Stockholm</div>
+            <div class="job-description">
+                <ul>
+                    <li>Accomplished a 20% reduction in infrastructure costs by developing and maintaining Grafana dashboards for real-time monitoring and automating resource utilization alerts using a Python-based notification system integrated with MySQL.</li>
+                    <li>Improved decision-making efficiency by analyzing utilization reports across various services, resulting in better resource allocation and optimized infrastructure management.</li>
+                    <li>Streamlined workflows and reduced manual intervention by 40% by automating the decommissioning process for underutilized resources, enhancing overall system performance.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="job-title">Frontend Developer</div>
+            <div class="company">Devtown Training Program</div>
+            <div class="date-location">Sep 2022 – Nov 2022 | India</div>
+            <div class="job-description">
+                <ul>
+                    <li>Gained experience by training and participating in developing a university website, contributing to its design, functionality, and user experience, ensuring effective communication and information dissemination.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="job-title">Python Developer</div>
+            <div class="company">Devtown</div>
+            <div class="date-location">Oct 2022 – Dec 2022 | India</div>
+            <div class="job-description">
+                <ul>
+                    <li>Created efficient Python scripts for handling complex data-driven workflows.</li>
+                    <li>Collaborated on the development of user-centric features for web applications.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="job-title">Artificial Intelligence Intern</div>
+            <div class="company">Verzeo</div>
+            <div class="date-location">Oct 2021 – Nov 2021 | India</div>
+            <div class="job-description">
+                <ul>
+                    <li>Developed machine learning models to solve real-world technical challenges.</li>
+                    <li>Optimized algorithms for better predictive accuracy in data analysis tasks.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="job-title">Python Development Intern</div>
+            <div class="company">Sparkway Technologies</div>
+            <div class="date-location">Jan 2021 – May 2021 | India</div>
+            <div class="job-description">
+                <ul>
+                    <li>Designed Python modules for machine learning techniques.</li>
+                    <li>Collaborated on data preprocessing and model optimization for system improvements.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="job-title">Cloud Intern</div>
+            <div class="company">Verzeo</div>
+            <div class="date-location">Apr 2020 – Jun 2020 | India</div>
+            <div class="job-description">
+                <ul>
+                    <li>Gained hands-on experience in cloud technologies such as AWS, Azure, and GCP.</li>
+                    <li>Assisted in integrating and troubleshooting cloud deployment projects.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Master of Science in Software Engineering</h3>
+            <p>Blekinge Institute of Technology</p>
+            <div class="details">
+                <span>Karlskrona, Sweden</span>
+                <span>January 2023 – ongoing</span>
+            </div>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor's of Technology, Computer Science</h3>
+            <p>Blekinge Institute of Technology</p>
+            <div class="details">
+                <span>Karlskrona, Sweden</span>
+                <span>August 2021 – June 2022</span>
+            </div>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+            <p>Sri Padmavathi Mahila Visvavidyalayam</p>
+            <div class="details">
+                <span>Tirupathi, India</span>
+                <span>July 2018 – August 2021</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        
+            <p><strong>Programming Languages:</strong> C, C++, Java, Python, JavaScript, Bash.</p>
+            <p><strong>Web Development:</strong> HTML5, CSS3, Tailwind CSS, Bootstrap, React/Angular, Node.js, TypeScript, Next.js, Express, SQL/NoSQL, RESTful APIs.</p>
+            <p><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL, SQL.</p>
+            <p><strong>Cloud Technologies:</strong> Amazon Web Services (AWS), Google Cloud Platform (GCP).</p>
+            <p><strong>DevOps and Automation:</strong> Terraform, Ansible, Docker, Kubernetes, Grafana, Bash scripting, Git, Jenkins, GitLab CI, GitHub Actions, CI/CD pipeline, Grafana.</p>
+            <p><strong>Development Methodologies & Other:</strong> Agile Environment, Automated Testing, DevOps Practices, CI/CD methodologies, JIRA, Linux.</p>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>COVID-19 Simulation / Python Programming</h3>
+            <p><em>Nov 2022 – Feb 2023 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>Designed and implemented low-level algorithms for modeling data-driven systems.</li>
+                <li>Developed a simulation model using Python and Markov chains for selected countries.</li>
+                <li>Presented insights through visualizations to demonstrate the societal impact of public health data.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>Continuous Integration Environment / Software Testing</h3>
+            <p><em>Jan 2023 – Mar 2023 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>Configured automated testing and delivery pipelines using Jenkins and Selenium.</li>
+                <li>Produced detailed reports and visual insights for technical stakeholders.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>Disease Spread Module / Methods and Tools</h3>
+            <p><em>Aug 2021 – Oct 2021 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>Developed a disease awareness website using WEKA, featuring visual insights through graphs and color-coded indicators.</li>
+                <li>The final output includes statistical tree analysis and plot graphs derived from the dataset statistics.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>Here’s the Drink / Mobile Application Development</h3>
+            <p><em>Jan 2022 – Mar 2022 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>The key objective of the project is to design an application that will help check on the availability of products.</li>
+                <li>The major selling point is that no subscription or personal details are required, even for new users.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>A Comparative Study of Overleaf and CoCalc using Usability Heuristics / Bachelor’s Thesis</h3>
+            <p><em>Jun 2022 – Oct 2022 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>The thesis focuses on selecting the best LaTeX editor between Overleaf and CoCalc to save time.</li>
+                <li>Survey methods were employed using questions delivered via Google Form.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>Android Tourist Guide / IoT Project</h3>
+            <p><em>Sep 2020 – Nov 2020 | India</em></p>
+            <ul>
+                <li>Developed an Android app that provides tourists with city maps based on their current location.</li>
+                <li>Beneficial for tourists who may not know local places to visit.</li>
+            </ul>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <h3>Ship of Fools / Python Programming</h3>
+            <p><em>Oct 2021 – Dec 2021 | Karlskrona, Sweden</em></p>
+            <ul>
+                <li>Developed a simple dice game played between two or more players.</li>
+                <li>Optimized gameplay for reduced complexity and better user experience, adhering to low-level programming techniques.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <p>Email: <a href="mailto:honeysree.pilot@gmail.com">honeysree.pilot@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/honey-sree" target="_blank">linkedin.com/in/honey-sree</a></p>
+        <p>Phone: +0793529123</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Honey Sree Chennamsetty. All Rights Reserved.</p>
+        <a href="#">Back to Top</a>
+    </footer>
+
+    <!-- Smooth Scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
